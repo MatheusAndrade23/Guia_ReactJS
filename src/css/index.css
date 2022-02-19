@@ -1,0 +1,100 @@
+.HomeContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.HomeContainer img {
+  height: 300px;
+  animation: App-logo-spin infinite 20s linear;
+  margin-top: 60px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open sans", sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #282c34;
+}
+
+input {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  padding: 15px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header div {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.header div p {
+  font-size: 30px;
+  margin-left: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.header div img {
+  width: 50px;
+}
+.header ul {
+  display: flex;
+  flex-direction: row;
+}
+.header ul li {
+  padding: 10px;
+  font-size: 19px;
+}
+.header ul li a {
+  position: relative;
+  color: #333 !important;
+}
+.header ul li a::after {
+  width: 0%;
+  height: 2px;
+  content: " ";
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  border-radius: 10px;
+  transition: all 150ms ease;
+  background-color: #61dafb;
+}
+.header ul li a:hover::after {
+  left: 0%;
+  width: 100%;
+}
+
+/*# sourceMappingURL=index.css.map */

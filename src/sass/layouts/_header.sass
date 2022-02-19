@@ -1,0 +1,54 @@
+@use '../base/variables'
+    
+.header
+    width: 100%
+    padding: 15px
+    background-color: variables.$light-color  
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+
+    div
+        width: max-content
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: row
+        
+        p
+            font-size: 30px
+            margin-left: 20px
+            font-weight: bold
+            color: variables.$dark-color
+        img
+            width: 50px
+
+    ul 
+        display: flex
+        flex-direction: row
+
+        li
+            padding: 10px
+            font-size: 19px
+
+            a   
+                position: relative
+                color: variables.$dark-color !important
+
+                &::after
+
+                    width: 0%
+                    height: 2px
+                    content: " "
+                    position: absolute
+                    bottom: 0%
+                    left: 50%
+                    border-radius: 10px
+                    transition: all 150ms ease
+                    background-color: variables.$primary-color
+
+                &:hover::after
+
+                    left: 0%
+                    width: 100%

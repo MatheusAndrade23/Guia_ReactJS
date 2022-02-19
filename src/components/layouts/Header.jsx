@@ -10,7 +10,8 @@ function Header(){
             <ul>
                 <li><a href='/intro'>Introdução</a></li>
                 <li><a href='/hooks'>React Hooks</a></li>
-                <li><a href='js'>JavaScript</a></li>
+                <li><a href='/js'>JavaScript</a></li>
+                <li><a href='https://github.com/MatheusAndrade23/Guia_ReactJS'>GitHub</a></li>
             </ul>
         </header>
     )

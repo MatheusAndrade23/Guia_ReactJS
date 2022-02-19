@@ -67,6 +67,32 @@
   margin: 20px 0;
   text-align: justify;
 }
+.containerIntro .code {
+  padding: 5px;
+  color: #61dafb;
+  border-radius: 5px;
+}
+.containerIntro .how li {
+  margin: 10px 0;
+}
+.containerIntro .how li p {
+  color: #fff;
+  margin: 5px 0;
+}
+.containerIntro .how span > a {
+  color: #61dafb;
+  text-decoration: underline;
+}
+.containerIntro .components img {
+  width: 500px;
+}
+.containerIntro .components span {
+  color: #61dafb;
+}
+.containerIntro .extra a {
+  color: #61dafb;
+  text-decoration: underline;
+}
 
 * {
   padding: 0;

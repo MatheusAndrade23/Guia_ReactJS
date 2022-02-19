@@ -1,0 +1,36 @@
+@use '../base/variables'
+    
+.containerIntro
+    margin-top: 90px
+    width: 100%
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-evenly
+    position: relative
+
+    h1
+        position: absolute
+        color: variables.$primary-color
+        margin: 20px 0
+        margin-top: -60px 
+
+    > article
+        min-height: 300px 
+        min-width: 350px
+        width: 40%
+        border: 1px solid variables.$light-color
+        border-radius: 10px
+        margin: 20px 0
+        padding: 20px
+
+    h2
+        color: variables.$primary-color
+
+    p
+        color: variables.$light-color
+        margin: 20px 0
+        text-align: justify
+
+
+

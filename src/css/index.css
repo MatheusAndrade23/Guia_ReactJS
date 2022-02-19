@@ -6,9 +6,25 @@
   align-items: center;
 }
 .HomeContainer img {
-  height: 300px;
+  height: 200px;
   animation: App-logo-spin infinite 20s linear;
-  margin-top: 60px;
+  margin-top: 40px;
+}
+.HomeContainer h1 {
+  font-size: 35px;
+  margin-top: 30px;
+  color: #61dafb;
+}
+.HomeContainer p {
+  color: #fff;
+  margin-top: 20px;
+  font-size: 22px;
+}
+.HomeContainer a {
+  text-decoration: underline;
+  color: #61dafb;
+  margin-top: 20px;
+  font-size: 17px;
 }
 
 @keyframes App-logo-spin {
@@ -19,6 +35,39 @@
     transform: rotate(360deg);
   }
 }
+.containerIntro {
+  margin-top: 90px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: relative;
+}
+.containerIntro h1 {
+  position: absolute;
+  color: #61dafb;
+  margin: 20px 0;
+  margin-top: -60px;
+}
+.containerIntro > article {
+  min-height: 300px;
+  min-width: 350px;
+  width: 40%;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 20px;
+}
+.containerIntro h2 {
+  color: #61dafb;
+}
+.containerIntro p {
+  color: #fff;
+  margin: 20px 0;
+  text-align: justify;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -53,20 +102,20 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-.header div {
+.header > a {
   width: max-content;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
 }
-.header div p {
+.header > a p {
   font-size: 30px;
   margin-left: 20px;
   font-weight: bold;
   color: #333;
 }
-.header div img {
+.header > a img {
   width: 50px;
 }
 .header ul {

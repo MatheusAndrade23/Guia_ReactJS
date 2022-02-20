@@ -30,17 +30,6 @@ function Intro() {
                 </p>
             </article>
 
-            <article className="how">
-                <h2>Como começar?</h2>
-                <ul>
-                    <li><p>1- Primeiramente, você deve instalar o <span><a href="https://nodejs.org/en/">NodeJS</a></span>.</p></li>
-                    <li><p>2- Abra o seu terminal preferido e digite: <span className='code'>npm install react</span></p></li>
-                    <li><p>3- E por fim, crie seu projeto utilizando o comando: </p></li>
-                    <li><span className='code'>npx create-react-app nome-do-projeto</span></li>
-                    <li><p>Você também pode utilizar o <span><a href="https://www.npmjs.com/">npm</a></span> para instalar todas as dependências que quiser.</p></li>
-                </ul>
-            </article>
-
             <article className="jsx">
                 <h2>O que é JSX?</h2>
                 <p>
@@ -52,6 +41,19 @@ function Intro() {
                     Porém, apesar de muito similar ao HTML, o JSX não é interpretado pelo navegador. Por este motivo, 
                     deve-se utilizar um “transpilador” para essa conversão. Atualmente, o mais conhecido deles é o Babel.
                 </p>
+            </article>
+
+            <article className="how">
+                <h2>Como começar?</h2>
+                <ul>
+                    <li><p>1- Primeiramente, você deve instalar o <span><a href="https://nodejs.org/en/">NodeJS</a></span>.</p></li>
+                    <li><p>2- Abra o seu terminal preferido e digite: <span className='code'>npm install react</span></p></li>
+                    <li><p>3- E por fim, crie seu projeto utilizando o comando: </p></li>
+                    <li><span className='code'>npx create-react-app nome-do-projeto</span></li>
+                    <li><p>E para inciar o projeto em localhoost, digite:</p></li>
+                    <li><span className='code'>npm start</span></li>
+                    <li><p>Você também pode utilizar o <span><a href="https://www.npmjs.com/">npm</a></span> para instalar todas as dependências que quiser.</p></li>
+                </ul>
             </article>
 
             <article className="components">

@@ -77,7 +77,7 @@ function Intro() {
             <article className='extra'>
                 <h2>Extra</h2>
                 <p>
-                    A instalação da <span><a href='https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi'>extensão do React</a></span> para desenvolvedores é recomendada.
+                    A instalação da <span><a href='https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi'>extensão</a></span> do React para desenvolvedores é recomendada.
                 </p>
                 <p>
                     Ela te permite saber se um site é feito com React e caso for, ver os seus componentes.

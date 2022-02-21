@@ -137,6 +137,53 @@
   text-align: justify;
 }
 
+.containerJS {
+  margin-top: 90px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: relative;
+}
+.containerJS h1 {
+  position: absolute;
+  color: #61dafb;
+  margin: 20px 0;
+  margin-top: -60px;
+}
+.containerJS > article {
+  min-height: 300px;
+  min-width: 350px;
+  width: 40%;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 20px;
+}
+.containerJS h2 {
+  color: #61dafb;
+}
+.containerJS h4 {
+  color: #61dafb;
+  font-weight: lighter;
+  margin-top: 10px;
+  font-size: 18px;
+}
+.containerJS p {
+  color: #fff;
+  margin: 20px 0;
+  text-align: justify;
+}
+.containerJS span {
+  color: #61dafb;
+  text-align: justify;
+}
+.containerJS a {
+  color: #61dafb;
+  text-decoration: underline;
+}
+
 * {
   padding: 0;
   margin: 0;

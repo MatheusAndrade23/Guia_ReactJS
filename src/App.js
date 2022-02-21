@@ -4,6 +4,7 @@ import Home from './components/pages/Home.jsx';
 import Header from './components/layouts/Header.jsx';
 import Intro from './components/pages/Intro.jsx';
 import Hooks from './components/pages/Hooks.jsx';
+import Js from './components/pages/Js.jsx';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route exact path='/' element={<Home />}/>
           <Route path='/intro' element={<Intro />}/>
           <Route path='/hooks' element={<Hooks />}/>
+          <Route path='/js' element={<Js />}/>
         </Routes>
     </Router>
   )

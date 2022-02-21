@@ -93,6 +93,7 @@ function Intro() {
                     <li><a href='https://blog.geekhunter.com.br/um-guia-para-usar-react-js/'>Guia ReactJs GeekHunter</a></li>
                     <li><a href='https://www.devmedia.com.br/react/'>DevMedia React</a></li>
                     <li><a href='https://www.udemy.com/course/curso-de-reactjs-nextjs-completo-do-basico-ao-avancado/'>Curso recomendado</a></li>
+                    <li><a href="https://github.com/rafaballerini/ReactHooks">React Hooks - Ballerini</a></li>
                 </ul>
             </article>
         </div>

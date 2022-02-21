@@ -102,10 +102,11 @@ function Hooks (){
 
             <article className='imperative'>
                 <h2>useImperativeHandle</h2>
-                <h4>É utilizado para passar um <span>ref</span> para um componente pai.</h4>
+                <h4>É utilizado para passar uma <span>ref</span> para um componente pai.</h4>
                 <p>Para importar: <span>import {useImperativeHandle} from 'react';</span></p>
-                <p>Deve ser combinado com o <span>forwardRef</span>:</p>
-                <span>export default forwardRef(Imperative)</span>
+                <p>Recebe 3 parâmetros: O primeiro é a referência a ser passada, o segundo é uma função
+                    e o terceiro é um array de dependências. E deve ser combinado com o <span>forwardRef</span>:</p>
+                <span>export default forwardRef(Imperative);</span>
             </article>
 
             <article className='layout'>

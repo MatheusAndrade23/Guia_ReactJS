@@ -1,7 +1,7 @@
 <h1 align="center">Guia ReactJS</h1>
 
 <div align="center">
-  <img src="/src/img/logo.jpeg"/>
+  <img src="/src/images/logo.jpeg"/>
 </div>
 
 ### Gerenciador de clientes com dívidas para um estabelecimento comercial, que elimina a necessidade de anotar as vendas fiado em cadernos. Desenvolvido com ReactJS, NodeJS e outras tecnologias.
@@ -14,10 +14,9 @@
 
 ### _Um pequeno tour pelo site! 🚀_
 
-
+<img src="/src/images/site.gif"/>
 
 ---
-
 
 <h2>Tecnologias Utilizadas:</h2>
  

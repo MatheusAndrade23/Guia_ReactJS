@@ -5,6 +5,7 @@ import Header from './components/layouts/Header.jsx';
 import Intro from './components/pages/Intro.jsx';
 import Hooks from './components/pages/Hooks.jsx';
 import Js from './components/pages/Js.jsx';
+import PageNotFound from './components/pages/PageNotFound.jsx';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path='/intro' element={<Intro />}/>
           <Route path='/hooks' element={<Hooks />}/>
           <Route path='/js' element={<Js />}/>
+          <Route path='*' element={<PageNotFound />}/>
         </Routes>
     </Router>
   )

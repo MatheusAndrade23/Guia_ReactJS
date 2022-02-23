@@ -52,3 +52,56 @@
 
                     left: 0%
                     width: 100%
+    
+    button
+        display: none
+        padding: .5rem 1rem
+        cursor: pointer
+        color: white
+        font-size: 15px
+        background-color: variables.$bg-color
+        border: white 1px solid
+        border-radius: 4px
+        visibility: visible
+        transition: .7s
+        position: absolute
+        overflow-y: hidden
+        top: 20px
+        right: 40px
+
+        &:hover
+            
+            background-color: variables.$primary-color
+
+    #hamburguer 
+        width: 20px
+        border-top: 2px solid white
+        gap: .5rem
+        display: block
+        margin-left: 10px
+    
+
+    #hamburguer::after,
+    #hamburguer::before 
+        display: block
+        content: ''
+        width: 20px
+        height: 2px
+        margin-top: 5px
+        background-color: white
+        transition: .3s
+        position: relative
+
+
+@media (max-width: 730px)
+    .header
+        button
+            display: flex
+
+        #menu
+            visibility: hidden
+
+    .header.active #menu
+        height: 170px
+        visibility: visible
+        display: block

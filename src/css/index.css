@@ -279,5 +279,57 @@ a {
   left: 0%;
   width: 100%;
 }
+.header button {
+  display: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+  background-color: #282c34;
+  border: white 1px solid;
+  border-radius: 4px;
+  visibility: visible;
+  transition: 0.7s;
+  position: absolute;
+  overflow-y: hidden;
+  top: 20px;
+  right: 40px;
+}
+.header button:hover {
+  background-color: #61dafb;
+}
+.header #hamburguer {
+  width: 20px;
+  border-top: 2px solid white;
+  gap: 0.5rem;
+  display: block;
+  margin-left: 10px;
+}
+.header #hamburguer::after,
+.header #hamburguer::before {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 2px;
+  margin-top: 5px;
+  background-color: white;
+  transition: 0.3s;
+  position: relative;
+}
+
+@media (max-width: 730px) {
+  .header button {
+    display: flex;
+  }
+  .header #menu {
+    visibility: hidden;
+  }
+
+  .header.active #menu {
+    height: 170px;
+    visibility: visible;
+    display: block;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */

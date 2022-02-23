@@ -1,6 +1,12 @@
 import logo from "../../images/logo192.png"
 
 function Header(){
+
+    function toggleMenu(){
+
+
+    };
+
     return(
         <header className='header'>
             <a href='/'>
@@ -13,7 +19,7 @@ function Header(){
                 <li><a href='/js'>JavaScript</a></li>
                 <li><a href='https://github.com/MatheusAndrade23/Guia_ReactJS'>GitHub</a></li>
             </ul>
-            <button>Menu
+            <button onClick={toggleMenu()}>Menu
                 <span id='hamburguer'></span>
             </button>
         </header>

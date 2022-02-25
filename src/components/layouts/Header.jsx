@@ -1,14 +1,18 @@
-import logo from "../../images/logo192.png"
+import { useRef } from 'react';
+
+import logo from "../../images/logo192.png";
 
 function Header(){
 
+    const headerRef = useRef(null);
+
     function toggleMenu(){
 
-
+        
     };
 
     return(
-        <header className='header'>
+        <header className='header' ref={headerRef}>
             <a href='/'>
                 <img src={logo} alt="logo_react"/>
                 <p>Guia ReactJS</p>

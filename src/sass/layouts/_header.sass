@@ -1,6 +1,6 @@
 @use '../base/variables'
     
-.header
+header
     width: 100%
     padding: 15px
     background-color: variables.$light-color  
@@ -18,7 +18,7 @@
         
         p
             font-size: 30px
-            margin-left: 20px
+            margin-left: 10px
             font-weight: bold
             color: variables.$dark-color
         img
@@ -27,6 +27,7 @@
     ul 
         display: flex
         flex-direction: row
+        transition: .7s
 
         li
             padding: 10px
@@ -34,7 +35,7 @@
 
             a   
                 position: relative
-                color: variables.$dark-color !important
+                color: variables.$dark-color
 
                 &::after
 
@@ -63,7 +64,7 @@
         border: white 1px solid
         border-radius: 4px
         visibility: visible
-        transition: .7s
+        transition: .3s
         position: absolute
         overflow-y: hidden
         top: 20px
@@ -94,17 +95,64 @@
 
 
 @media (max-width: 730px)
-    .header
+    header
         button
             display: flex
+            justify-content: center
+            align-items: center
+            right: 10px
 
         #menu
             visibility: hidden
             position: absolute
-            top: 20px
-            right: 40px
+            top: 70px
+            right: 0px
+            width: 100%
+            background-color: transparent
+            height: 0px
+            overflow: hidden
 
-    .header.active #menu
-        height: 170px
-        visibility: visible
-        display: block
+            a
+                color: transparent
+
+    header.active 
+        
+        margin: 0
+
+        #menu
+            height: auto
+            width: 100%
+            justify-content: center
+            visibility: visible
+            background-color: variables.$light-color
+            display: block
+            z-index: 10
+
+            a
+                color: variables.$dark-color
+
+        #hamburguer
+
+            border-color: transparent 
+
+        #hamburguer::before 
+
+            transform: rotate(135deg)
+
+        #hamburguer::after
+
+            transform: rotate(-135deg)
+            top: -7px
+
+@media (max-width: 400px)
+
+    header
+        > a
+            p
+                font-size: 25px
+            img
+                width: 40px
+
+        button
+            top: 16px
+

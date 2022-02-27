@@ -19,6 +19,7 @@
   color: #fff;
   margin-top: 20px;
   font-size: 22px;
+  text-align: center;
 }
 .HomeContainer a {
   text-decoration: underline;
@@ -84,7 +85,7 @@
   text-decoration: underline;
 }
 .containerIntro .components img {
-  width: 500px;
+  width: calc(100% - 10px);
 }
 .containerIntro .components span {
   color: #61dafb;
@@ -92,6 +93,9 @@
 .containerIntro .extra a {
   color: #61dafb;
   text-decoration: underline;
+}
+.containerIntro .extra img {
+  width: calc(100% - 10px);
 }
 
 .containerHooks {
@@ -227,7 +231,7 @@ a {
   text-decoration: none;
 }
 
-.header {
+header {
   width: 100%;
   padding: 15px;
   background-color: #fff;
@@ -236,35 +240,36 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-.header > a {
+header > a {
   width: max-content;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
 }
-.header > a p {
+header > a p {
   font-size: 30px;
-  margin-left: 20px;
+  margin-left: 10px;
   font-weight: bold;
   color: #333;
 }
-.header > a img {
+header > a img {
   width: 50px;
 }
-.header ul {
+header ul {
   display: flex;
   flex-direction: row;
+  transition: 0.7s;
 }
-.header ul li {
+header ul li {
   padding: 10px;
   font-size: 19px;
 }
-.header ul li a {
+header ul li a {
   position: relative;
-  color: #333 !important;
+  color: #333;
 }
-.header ul li a::after {
+header ul li a::after {
   width: 0%;
   height: 2px;
   content: " ";
@@ -275,11 +280,11 @@ a {
   transition: all 150ms ease;
   background-color: #61dafb;
 }
-.header ul li a:hover::after {
+header ul li a:hover::after {
   left: 0%;
   width: 100%;
 }
-.header button {
+header button {
   display: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
@@ -289,24 +294,24 @@ a {
   border: white 1px solid;
   border-radius: 4px;
   visibility: visible;
-  transition: 0.7s;
+  transition: 0.3s;
   position: absolute;
   overflow-y: hidden;
   top: 20px;
   right: 40px;
 }
-.header button:hover {
+header button:hover {
   background-color: #61dafb;
 }
-.header #hamburguer {
+header #hamburguer {
   width: 20px;
   border-top: 2px solid white;
   gap: 0.5rem;
   display: block;
   margin-left: 10px;
 }
-.header #hamburguer::after,
-.header #hamburguer::before {
+header #hamburguer::after,
+header #hamburguer::before {
   display: block;
   content: "";
   width: 20px;
@@ -318,20 +323,61 @@ a {
 }
 
 @media (max-width: 730px) {
-  .header button {
+  header button {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 10px;
   }
-  .header #menu {
+  header #menu {
     visibility: hidden;
     position: absolute;
-    top: 20px;
-    right: 40px;
+    top: 70px;
+    right: 0px;
+    width: 100%;
+    background-color: transparent;
+    height: 0px;
+    overflow: hidden;
+  }
+  header #menu a {
+    color: transparent;
   }
 
-  .header.active #menu {
-    height: 170px;
+  header.active {
+    margin: 0;
+  }
+  header.active #menu {
+    height: auto;
+    width: 100%;
+    justify-content: center;
     visibility: visible;
+    background-color: #fff;
     display: block;
+    z-index: 10;
+  }
+  header.active #menu a {
+    color: #333;
+  }
+  header.active #hamburguer {
+    border-color: transparent;
+  }
+  header.active #hamburguer::before {
+    transform: rotate(135deg);
+  }
+  header.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+@media (max-width: 400px) {
+  header > a p {
+    font-size: 25px;
+  }
+  header > a img {
+    width: 40px;
+  }
+  header button {
+    top: 16px;
   }
 }
 
